@@ -1,0 +1,10 @@
+.toast {
+
+    background-color: red;
+position: fixed;
+    right: 52px;
+    top: 52px;
+    width: 400px; /*Ширина блока*/
+    height: 200px; /*Высота блока*/
+}
+
