@@ -1,10 +1,19 @@
+// const arr = []
+
+
 function showMessage(title, text) {
 
     // Создать ноду жтмл с томтом, create element/
     // присвоить классы(для стилей)
     // Найти body
     // присобачить наш тост-хтмл с нашим текстом
-    document.getElementsByTagName("body")[0].appendChild(createToast(title, text))
+    const toast = createToast(title, text);
+    // arr.push(toast);
+    document.getElementsByTagName("body")[0].appendChild(toast);
+
+    setTimeout(() => {
+        removeToast(toast)
+    }, 3000)
 }
 
 function createToast(title, text) {
@@ -23,7 +32,11 @@ function createToast(title, text) {
     toastEl.appendChild(textEl);
 
 
-
     return toastEl;
 }
 
+// метод для удаления toast
+function removeToast(toast) {
+    toast.parentElement.removeChild(toast);
+
+}
