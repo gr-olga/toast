@@ -4,7 +4,17 @@
     position: fixed;
     right: 60px;
     top: 60px;
-    width: 400px; /*Ширина блока*/
-    height: 200px; /*Высота блока*/
+    max-width: 400px; /*Ширина блока*/
+    padding: 15px;
+    border-radius: 15px;
+    color: #484141;
 }
 
+.title {
+
+
+}
+.text {
+
+
+}
