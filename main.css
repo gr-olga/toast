@@ -1,19 +1,29 @@
-.toast {
+.shell {
+    position: absolute;
+    right: 10px;
+}
 
-    background-color: red;
+.toast {
     /*position: fixed;*/
     right: 60px;
     top: 60px;
     max-width: 400px; /*Ширина блока*/
     padding: 15px;
     border-radius: 15px;
-    color: #484141;
+    /*position: absolute;*/
+    min-width: 200px;
+    margin-bottom: 10px;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    border: 1px solid;
 }
 
 .title {
 
 
 }
+
 .text {
 
 

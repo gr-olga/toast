@@ -1,5 +1,13 @@
 // const arr = []
 
+let shellEl;
+
+document.addEventListener("DOMContentLoaded",  (event) => {
+    shellEl = document.createElement('div');
+    shellEl.className = 'shell';
+    document.getElementsByTagName("body")[0].appendChild(shellEl);
+
+});
 
 function showMessage(title, text) {
 
@@ -9,17 +17,23 @@ function showMessage(title, text) {
     // присобачить наш тост-хтмл с нашим текстом
     const toast = createToast(title, text);
     // arr.push(toast);
-    document.getElementsByTagName("body")[0].appendChild(toast);
+
+    shellEl.appendChild(toast);
+    // document.getElementsByTagName("body")[0].appendChild(toast);
 
     setTimeout(() => {
-        removeToast(toast)
+        // removeToast(toast)
     }, 3000)
 }
 
+
 function createToast(title, text) {
+
+
     const toastEl = document.createElement('div');
     const titleEl = document.createElement('div');
     const textEl = document.createElement('div');
+
 
     toastEl.className = 'toast';
     titleEl.className = 'title';
